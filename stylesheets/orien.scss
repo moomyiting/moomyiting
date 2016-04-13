@@ -46,9 +46,6 @@ p, ul{
     font-size: 1em;
     line-height: 24px;
 }
-p{
-    color: #666;
-}
 
 a{
     text-decoration: none;
@@ -76,10 +73,13 @@ article:target ~ .intro {
     width: 1000px;
     
     &-nav{
+        border: 1px #eee solid;
+        border-radius: 10px;
         float: left;
-        width: 18%;
+        width: 160px;
         overflow: hidden;
         position: fixed;
+        box-shadow: 1px 1px 1px 1px #eee;
         
         ul,li{
             padding-left: 10px;
@@ -97,7 +97,10 @@ article:target ~ .intro {
         a:hover{
             color: #ff5e00;
             font-weight: 700;
-        } 
+        }
+        a.active{
+            color: #ff5e00;
+        }
     }
     
     &-section{
@@ -189,51 +192,96 @@ article:target ~ .intro {
         }
     }
 
-// 示範圖的背景框
+// SVG示範圖的背景框
 .img_bg{
     background: #333;
     display: block;
     width: 100%;
     text-align: center;
-    
+    padding: 40px;
 }
 
-// 共用表格
-table{
-    width: 100%;
-    margin-bottom: 18px;
-    border-collapse: collapse;
-    border-spacing: 0;
-    vertical-align: top;
-    
-    th{
-        color: #333;
-        padding-bottom: 15px;
-        border-bottom: 2px solid #e5e5e1;
-        text-align: center;
-    }
-    
-    td{
-        border-bottom: 1px solid #e5e5e1;
-        padding-top: 11px;
-        padding: 12px;
-        text-align: left;
-    }
-}
 
 // forms style
 
 #forms{
     ol,ul,li{
-        padding-left: 5px;
+        padding-left: 10px;
     }
     ol>li{
         font-weight: 700;
-        line-height: 36px;
+        line-height: 1em;
         padding-top: 15px;
         color: #333;
+        
+        p{
+            color: #666;
+            font-weight: 400;
+            margin-top: 10px;
+        }
     }
     ul{
         list-style-type: none;
+    }
+    
+    table:nth-of-type(1){
+        width: 100%;
+        margin-bottom: 18px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        vertical-align: top;
+
+        th{
+            color: #333;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e5e5e1;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        td{
+            border-bottom: 1px solid #e5e5e1;
+            padding-top: 11px;
+            padding: 12px;
+            text-align: left;
+        }
+    }
+    
+    table:nth-of-type(2){
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 20px;
+        
+        td{
+            vertical-align: top;
+        }
+        ul{
+            padding: 0;
+        }
+        li::before {
+            content: '●';
+            margin-right: 5px;
+        }
+    }
+}
+
+// web_btn
+#btn{
+    
+    table:nth-of-type(1){
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 20px;
+        
+        td{
+            vertical-align: top;
+        }
+        ul{
+            padding: 0;
+        }
+        li::before {
+            content: '●';
+            margin-right: 5px;
+        }
     }
 }
