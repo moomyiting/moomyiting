@@ -86,6 +86,7 @@ article:target ~ .intro {
   overflow: hidden;
   position: fixed;
   box-shadow: 1px 1px 1px 1px #eee;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 #container-nav ul, #container-nav li {
@@ -209,7 +210,11 @@ article:target ~ .intro {
   display: block;
   width: 100%;
   text-align: center;
-  padding: 40px;
+  padding: 10px;
+}
+
+.img_bg img {
+  width: 80%;
 }
 
 #forms ol, #forms ul, #forms li {
@@ -266,6 +271,21 @@ article:target ~ .intro {
   vertical-align: top;
 }
 
+#forms table:nth-of-type(2) b {
+  color: #333;
+}
+
+#forms table:nth-of-type(2) tr:nth-of-type(1) {
+  text-align: center;
+  background: #333;
+  height: 200px;
+}
+
+#forms table:nth-of-type(2) tr:nth-of-type(1) img {
+  padding-top: 25px;
+  width: 100%;
+}
+
 #forms table:nth-of-type(2) ul {
   padding: 0;
 }
@@ -285,11 +305,151 @@ article:target ~ .intro {
   vertical-align: top;
 }
 
+#btn table:nth-of-type(1) b {
+  color: #333;
+}
+
+#btn table:nth-of-type(1) tr:nth-of-type(1) {
+  text-align: center;
+  background: #333;
+  height: 200px;
+}
+
+#btn table:nth-of-type(1) tr:nth-of-type(1) img {
+  padding-top: 25px;
+  width: 90%;
+}
+
 #btn table:nth-of-type(1) ul {
+  list-style: none;
   padding: 0;
 }
 
 #btn table:nth-of-type(1) li::before {
   content: '●';
   margin-right: 5px;
+}
+
+#btn table:nth-of-type(2) {
+  width: 100%;
+  margin-bottom: 18px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  vertical-align: top;
+}
+
+#btn table:nth-of-type(2) th {
+  color: #333;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e5e5e1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+#btn table:nth-of-type(2) td {
+  border-bottom: 1px solid #e5e5e1;
+  padding-top: 11px;
+  padding: 12px;
+  text-align: left;
+}
+
+#typo ol, #typo ul, #typo li {
+  padding-left: 10px;
+}
+
+#typo ol > li {
+  font-weight: 700;
+  line-height: 1em;
+  padding-top: 20px;
+  color: #333;
+}
+
+#typo ul {
+  list-style: none;
+  margin-top: 5px;
+}
+
+#typo ul > li {
+  color: #666;
+  font-weight: 400;
+}
+
+#typo ul > li::before {
+  content: '●';
+  margin-right: 5px;
+}
+
+#typo table {
+  width: 100%;
+  margin-bottom: 18px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  vertical-align: top;
+}
+
+#typo table th {
+  color: #333;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e5e5e1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+#typo table td {
+  vertical-align: top;
+  border-bottom: 1px solid #e5e5e1;
+  padding-top: 11px;
+  padding: 12px;
+  text-align: left;
+  line-height: 24px;
+}
+
+#typo table th:nth-of-type(1) {
+  width: 35%;
+}
+
+#typo table th:nth-of-type(2) {
+  width: 25%;
+}
+
+#typo table th:nth-of-type(3) {
+  width: 35%;
+}
+
+#typo table .font_img {
+  width: 400px;
+  text-align: center;
+}
+
+#typo table b {
+  color: #ff5e00;
+  font-size: 1.2em;
+}
+
+#typo .w1 {
+  font-size: 5em;
+}
+
+#typo .w2 {
+  font-size: 2.5em;
+}
+
+#typo .w3 {
+  font-size: 2em;
+}
+
+#typo .w4 {
+  font-size: 1.5em;
+}
+
+#typo .w5 {
+  font-size: 1.2em;
+}
+
+#typo .w6 {
+  font-size: 1em;
+}
+
+#typo .w7 {
+  font-size: 1em;
 }

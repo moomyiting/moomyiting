@@ -70,7 +70,126 @@ Header, buttons, backgrounds,forms, UI controls, etc.</p>
             </article>
             <article id="typo">
                 <h1>Typography</h1>
-                <section>123</section>
+                <section>
+                    <h2>Fonts</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <b>Lato</b>
+                                    <ul>
+                                        <li>Primary use is for body, navigation, UI microcopy</li>
+                                        <li>Not used for headlines but is a fall back if another fonts can't be loaded.</li>
+                                        <li>In HTML/CSS, use – font-family: "Lato”, Arial, sans-serif;</li>
+                                    </ul>
+                                </td>
+                                <td class="font_img"><img src="images/orien/fonts-1.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Open Sans</b>
+                                    <ul>
+                                        <li>Used in H2.</li>
+                                        <li>Not used for headlines.</li>
+                                        <li>In HTML/CSS, use – font-family: "open sans”, Arial, sans-serif;</li>
+                                    </ul>
+                                </td>
+                                <td class="font_img"><img src="images/orien/fonts-2.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Noto sans</b>
+                                    <ul>
+                                        <li>Not used for headlines.</li>
+                                        <li>Primary use is for chinese.</li>
+                                        <li>In HTML/CSS, use – font-family: "Noto sans”, "SimHei”, “Microsoft JhengHei”.</li>
+                                    </ul>
+                                </td>
+                                <td class="font_img"><img src="images/orien/fonts-3.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>SimHei</b>
+                                    <ul>
+                                        <li>Not used for headlines.</li>
+                                        <li>Primary use is for chinese.</li>
+                                        <li>In HTML/CSS, use – font-family: "Noto sans”, "SimHei”, “Microsoft JhengHei”.</li>
+                                    </ul>
+                                </td>
+                                <td class="font_img"><img src="images/orien/fonts-4.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>Microsoft JhengHei</b>
+                                    <ul>
+                                        <li>Not used for headlines.</li>
+                                        <li>Primary use is for chinese.</li>
+                                        <li>In HTML/CSS, use – font-family: "Noto sans”, "SimHei”, “Microsoft JhengHei”.</li>
+                                    </ul>
+                                </td>
+                                <td class="font_img"><img src="images/orien/fonts-5.svg"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Web style</h2>
+                    <table>
+                        <thead>
+                            <th>Element</th>
+                            <th>Specs</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><p class="w1">Headline</p></td>
+                                <td>
+                                    5em Lato regular centered<br/>
+                                    5em line-height<br/>
+                                </td>
+                                <td>Used for the H1 headline in the hero area. Should only be used once per page.</td>
+                            </tr>
+                            <tr>
+                                <td><p class="w2">Sub-headline</td>
+                                <td>
+                                    2.5em Lato regular
+                                </td>
+                                <td>The sub-headline appears directly below the headline. </td>
+                            </tr>
+                            <tr>
+                                <td><p class="w3">First level heading</td>
+                                <td>
+                                    2em Lato regular<br/>
+                                    2em letter-spacing
+                                </td>
+                                <td>Used for regular H1 headlines. Usually paired with supporting content. </td>
+                            </tr>
+                            <tr>
+                                <td><p class="w4">Second level heading</td>
+                                <td>1.5em Lato regular centered</td>
+                                <td>Used for regular H1 headlines. Usually paired with supporting content. </td>
+                            </tr>
+                            <tr>
+                                <td><p class="w5">Third level heading</td>
+                                <td>1.2em Lato regular</td>
+                                <td>Used for H3 sub-headlines. Usually paired with paragraph text and nested under an H2 copy block.</td>
+                            </tr>
+                            <tr>
+                                <td><p class="w6">Oversize paragraph</td>
+                                <td>
+                                    1em Lato regular<br/>
+                                    2em line-height</td>
+                                <td>Choose this oversize option when you have adequate space and copy length.</td>
+                            </tr>
+                            <tr>
+                                <td><p class="w7">Regular Paragraph</td>
+                                <td>
+                                    1em Lato regular<br/>
+                                    1em light-height
+                                </td>
+                                <td>Used for long-form text. Choose this oversize option when you have adequate space and reduced overall copy length. </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
             </article>
             <article id="btn">
                 <h1>Buttons</h1>
@@ -78,20 +197,70 @@ Header, buttons, backgrounds,forms, UI controls, etc.</p>
                     <h2>Basic buttons</h2>
                     <table>
                         <tr>
-                            <td style="background:#333;"></td>
-                            <td style="background:#333;"></td>
+                            <td><img src="images/orien/btn_n.svg"></td>
+                            <td><img src="images/orien/btn_h.svg"></td>
                         </tr>
                         <tr>
                             <td>
-                                <b>Normal</b>
+                                <b>A. Normal</b>
+                                <ul>
+                                    <li>Text: 1em Lato regular</li>
+                                    <li>Text letter-spacing: 10px</li>
+                                    <li>Button width: 250px</li>
+                                    <li>Button Height: 50px</li>
+                                    <li>Button border: 1px #ffffff</li>
+                                    <li>Button radius: 50px</li>
+                                    <li>button background: none</li>
+                                </ul>
                             </td>
                             <td>
-                                <b>Hover</b>
+                                <b>B. Hover</b>
+                                <ul>
+                                    <li>Text: 1em Lato regular</li>
+                                    <li>Text letter-spacing: 10px</li>
+                                    <li>Button border: 1px #ff5e00</li>
+                                    <li>Button radius: 50px</li>
+                                    <li>button background: #ff5e00</li>
+                                </ul>
                             </td>
                         </tr>
                     </table>
                     <h2>Social buttons</h2>
                     <p>Use these buttons for any social media actions.</p>
+                    <table>
+                        <thead>
+                            <th>Media</th>
+                            <th>State: Normal</th>
+                            <th>State: Hover</th>
+                            <th>Link</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Google+</td>
+                                <td></td>
+                                <td></td>
+                                <td>Wating...</td>
+                            </tr>
+                            <tr>
+                                <td>Facebook</td>
+                                <td></td>
+                                <td></td>
+                                <td>Wating...</td>
+                            </tr>
+                            <tr>
+                                <td>Linkedin</td>
+                                <td></td>
+                                <td></td>
+                                <td>Wating...</td>
+                            </tr>
+                            <tr>
+                                <td>Twitter</td>
+                                <td></td>
+                                <td></td>
+                                <td>Wating...</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </section>
             </article>
             <article id="forms">
@@ -99,7 +268,7 @@ Header, buttons, backgrounds,forms, UI controls, etc.</p>
                 <section>
                     <p>Forms allow users to enter data that is used by the application, or to configure options. Designing forms well requires decisions about its structure and sequence, as well as its interface elements, field labels and offered help and feedback.</p>
                     <h2>Form details</h2>
-                    <div class="img_bg"><img src="images/orien/form_details.svg" width="60%"/></div>
+                    <div class="img_bg"><img src="images/orien/form_details.svg"></div>
                     <ol>
                         <li>
                             Normal with field label
@@ -235,12 +404,12 @@ Header, buttons, backgrounds,forms, UI controls, etc.</p>
                     <h2>Layout</h2>
                     <table>
                         <tr>
-                            <td style="background: #333;">1</td>
-                            <td style="background: #333;">1</td>
+                            <td><img src="images/orien/form_sl.svg"></td>
+                            <td><img src="images/orien/form_ml.svg"></td>
                         </tr>
                         <tr>
                             <td>
-                                <b>Single-line text field</b>
+                                <b>A. Single-line text field</b>
                                 <ul>
                                     <li>Height: 72px</li>
                                     <li>Padding between label and input text: 5px</li>
@@ -249,7 +418,7 @@ Header, buttons, backgrounds,forms, UI controls, etc.</p>
                                 </ul>
                             </td>
                             <td>
-                                <b>Multi-line text field</b>
+                                <b>B. Multi-line text field</b>
                                 <ul>
                                     <li>Padding between label and input text: 5px</li>
                                     <li>Padding below input text (with border): 10px</li>
