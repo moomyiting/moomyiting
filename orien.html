@@ -2,40 +2,154 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title> ORIEN Guidelines </title>
+  <title> ORIEN Design Guidelines </title>
   <link rel="stylesheet" type="text/css" href="stylesheets/orien.css">
 </head>
 <body>
    
-    <header>ORIEN Guidelines</header>
+    <header>ORIEN Design Guidelines</header>
     <div id="container">
         <nav id="container-nav">
             <ul>
                 <li><a class="active" href="#">Intro</a></li>
-                <li>Brand</li>
-                <li><a href="#logo">Logo</a></li>
-                <li><a href="#trademark">Trademark</a></li>
-                <li><a href="#logotype">Logotype</a></li>
-                <li><a href="#spacing">Spacing</a></li>
-                <li><a href="#brand_color">Color</a></li>
-                <li><a href="#usage">Usage</a></li>
-                <li>Web</li>
-                <li><a href="#web_colors">Colors</a></li>
-                <li><a href="#typo">Typography</a></li>
-                <li><a href="#btn">Buttons</a></li>
-                <li><a href="#forms">Forms</a></li>
+                <li class="brand">Brand
+                    <ul>
+                        <li><a href="#logo">Logo</a></li>
+                        <li><a href="#trademark">Trademark</a></li>
+                        <li><a href="#logotype">Logotype</a></li>
+                        <li><a href="#spacing">Spacing</a></li>
+                        <li><a href="#brand_colors">Colors</a></li>
+                        <li><a href="#usage">Usage</a></li>
+                    </ul>
+                </li>
+                <li class="web">Web
+                    <ul>
+                        <li><a href="#web_colors">Colors</a></li>
+                        <li><a href="#typo">Typography</a></li>
+                        <li><a href="#btn">Buttons</a></li>
+                        <li><a href="#forms">Forms</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
-        <div id="container-section">
-            <article id="logo">
+        <main id="container-section">
+            <section class="intro show">
+                <div style="text-align:center;"><img src="images/orien/intro.svg" width="60%"/>
+                </div>
+                <h2>The ORIEN Guidelines</h2>
+                <p>These guidelines are designed to help use ORIEN’s brand and assets, including brand of logo, content, trademarks, and web of colors, buttons, typography and forms. <br/><br/>
+
+These rules will help you communicate the ORIEN brand most effectively.
+            </section>
+            <article id="brand">
+                <section id="logo">
                     <h1>Logo</h1>
-                    <section>
                         <p>
                         The standard version of our logo, which should be used in most instances, is filled with a solid color called “ORIEN orange”. Black and white version should be used in printed, including paper, clothes or display in small scale (i.e., less than ~50px.).
                         <br/><br/>
                         Do not modify or alter the marks or use them in a confusing way.
                         </p>
-                    </section>
+                    <table>
+                        <tr>
+                            <td>
+                                <svg fill="#ff5e00"><use xlink:href="images/orien/logo-1.svg#logo" /></svg>
+                            </td>
+                            <td>
+                                <svg fill="black"><use xlink:href="images/orien/logo-1.svg#logo" /></svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>XXXXXXXXXXXXXXXXX</td>
+                            <td>XXXXXXXXXXXXXXXXX</td>
+                        </tr>
+                    </table>
+                            <p>Download the ORIEN logo in PNG, SVG, and PDF below.</p>
+                </section>
+                <section id="trademark">
+                    <h1>Trademark</h1>
+                        <p>
+                            ORIEN’s trademark should be used in instances where our brand requires name recognition, not just the visual recognition of our logo. It should only be rendered in black or white.
+                        </p>
+                    <table>
+                        <tr>
+                            <td>
+                                <svg fill="black"><use xlink:href="images/orien/logo-2.svg#logo" /></svg>
+                            </td>
+                            <td>
+                                <svg fill="white"><use xlink:href="images/orien/logo-2.svg#logo" /></svg>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="logotype">
+                    <h1>logotype</h1>
+                        <p>
+                            The logotype describes how the logo and the trademark should properly align with each other. The lockup should only be used with the grey logo and black trademark, or the white version for darker backgrounds.
+                        </p>
+                    <table>
+                        <tr>
+                            <td>
+                                <svg fill="black"><use xlink:href="images/orien/logo-3.svg#logo" /></svg>
+                            </td>
+                            <td>
+                                <svg fill="white"><use xlink:href="images/orien/logo-3.svg#logo" /></svg>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="spacing">
+                    <h1>Spacing</h1>
+                        <p>
+                            Keep at least a ORIEN logo worth of space between the Logotype and other elements.<br/>
+                            When using the logo, it's best to leave about 30% whitespace between it and adjacent elements. and reduce the logo by 10% when putting it inside of a circle.
+                        </p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <img src="images/orien/spacing-1.svg" width="80%" />
+                                        <p>These diagrams are precise but we think your best approximation is just fine.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="images/orien/spacing-2.gif" width="40%">
+                                        <p>xxxxxxxxxxxx</p>
+                                    </td>
+                                    <td>
+                                        <img src="images/orien/spacing-3.gif" width="40%">
+                                        <p>xxxxxxxxxxxx</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </section>
+                <section id="brand_colors">
+                    <h1>Color</h1>
+                        <p>
+                            Those color is what we use in official website VI and logo. When you want to print anything, please use our rich black (CMYK 40,30,30,100) instead of black (CMYK 0,0,0,100).
+                        </p>
+                        <div class="grid_1">
+                                <div class="grid_1 swatch_1"><p class="swatch_name_light">ORIEN orange</p><p class="swatch_footer_light">RGB 255, 94, 0<BR/>#ff5e00</p></div>
+                                <div class="grid_1 swatch_10"><p class="swatch_name_light">Rich Black</p><p class="swatch_footer_light">RGB 255, 110, 110<br/>#FF6E6E</p></div>
+                            </div>
+                </section>
+                <section id="usage">
+                    <h1>Usage</h1>
+                        <ul>
+                            <li>Don’t add additional shadows, change colors, add lighting effects, Crop, stretch, modify, or change the orientation.</li>
+                            <li>Don’t use the logo in confusing or conceptual ways.</li>
+                            <li>
+                                The "ORIEN" is always capitalized.
+                                <ul>
+                                    <li>ORIEN [V]</li>
+                                    <li>Orien [X]</li>
+                                    <li>orien [X]</li>
+                                    <li>oRIEN [x]</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </section>
             </article>
             <article id="web_colors">
                 <h1>Colors</h1>
@@ -435,21 +549,19 @@ Header, buttons, backgrounds,forms, UI controls, etc.</p>
                     </table>
                 </section>
             </article>
-            <section class="intro">
-                <div style="text-align:center;"><img src="images/orien/intro.svg" width="60%"/></div>
-                <h2>The ORIEN Guidelines</h2>
-                <p>These guidelines are designed to help use ORIEN’s brand and assets, including brand of logo, content, trademarks, and web of colors, buttons, typography and forms. <br/><br/>
-
-These rules will help you communicate the ORIEN brand most effectively.<br/><br/>
-
-This guide has guidelines, logos, colors, assets, and instructions necessary for putting together your very own Trello-branded materials.</p>
-            </section>
-        </div>
+        </main>
     </div>
     <script>
-        document.getElementById("container-nav").addEventListener("click", function(event){
-            document.getElementById("container-nav").querySelector(".active").classList.remove("active");
+        document.querySelector("nav").addEventListener("click", function(event){
+            document.querySelector("nav .active").classList.remove("active");
             event.target.classList.add("active");
+            document.querySelector(".show").classList.remove("show");
+            let target = document.querySelector(".intro");
+            if (event.target.matches(".brand ul > li a"))
+                target = document.querySelector("#brand");
+            else if (event.target.matches(".web ul > li a"))
+                target = document.querySelector(event.target.getAttribute('href'));
+            target.classList.add("show");
         }, true)
     </script>
 </body>
