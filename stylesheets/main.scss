@@ -2,14 +2,29 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
 body{
-  background: #eeeeee;
-  margin: 0 auto;
+    background: black;
+    margin: 30px;
+    text-align: center;
+    color: white;
 }
 
 button{
-  width: 150px;
-  height: 100px;
-  text-align: center;
-  font-family: "Lato";
-  font-size: 2em;
+    width: 350px;
+    height: 80px;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 2em;
+    border-radius: 50px;
+    background: none;
+    border: 3px solid white;
+    color: white;
+}
+
+ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    li{
+        margin-bottom: 40px;
+    }
 }
