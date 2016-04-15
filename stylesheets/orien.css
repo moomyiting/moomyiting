@@ -115,7 +115,7 @@ table {
   color: #ff5e00;
 }
 
-#container-section {
+#container main {
   float: right;
   width: 780px;
 }
@@ -481,3 +481,20 @@ table {
 #spacing td {
   text-align: center;
 }
+
+/*@media screen and (max-width: 960px) {
+    #container{
+        width: 100%;
+        padding: 0;
+        
+        nav{
+            position: absolute;
+            right: 20px;
+            z-index: 100;
+            top:100;
+        }
+        main{
+            width: 95%;
+        }
+    }   
+}*/
