@@ -6,10 +6,11 @@ body{
     font-family: 'Lato', sans-serif;
     //letter-spacing: 1px;
     color: #666;
-}
-
-
-header{
+    //overflow-y: hidden;
+    padding: 20px;
+    
+    > header{
+        
     height: 80px;
     border-bottom: 1px #ccc solid;
     box-shadow: 0 2px 5px rgba(0,0,0,.26);
@@ -21,6 +22,14 @@ header{
     font-weight: 700;
     line-height: 80px;
     background: #ff5e00;
+        
+    }
+}
+
+iframe{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    border: 0px;
 }
 
 h1{
@@ -71,18 +80,19 @@ article, .intro {
 
 table{
     width: 95%;
+    display: none;
 }
 
 #container{
     margin: 0 auto;
-    padding: 2vw;
-    max-width: 1000px;
+    //padding: 2vw;
+    //max-width: 1000px;
     //overflow: hidden;
     
     nav{
         border: 1px #eee solid;
         border-radius: 10px;
-        float: left;
+        //float: left;
         width: 160px;
         overflow: hidden;
         position: fixed;
@@ -112,9 +122,13 @@ table{
     }
     
     main {
-        float: right;
-        width: 780px;
+        //float: right;
+        //width: 780px;
         //padding-top: 80px;
+        img{
+            max-width: 100%;
+            display: block;
+        }
     }      
 }
 
@@ -211,11 +225,13 @@ table{
     background: #333;
     display: block;
     width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
     text-align: center;
     padding: 10px;
     
     img{
-        width: 80%;
+        max-width: 80%;
     }
 }
 
@@ -252,7 +268,6 @@ table{
 }
 
 // article: forms
-
 #forms{
     ol,ul,li{
         padding-left: 10px;
@@ -273,7 +288,7 @@ table{
         list-style-type: none;
     }
     
-    table:nth-of-type(1){
+    /*table:nth-of-type(1){
         margin-bottom: 18px;
         border-collapse: collapse;
         border-spacing: 0;
@@ -326,9 +341,73 @@ table{
             content: '●';
             margin-right: 5px;
         }
+    }*/
+    
+    section {
+        border-bottom: 1px solid #e5e5e1;
+        
+        &:first-of-type{
+            border-bottom: none;
+        }
+        
+        &::after { 
+           content: "";
+           display: block; 
+           clear: both;
+        }
+        
+        header {
+            font-size: 1.2em;
+            color: #ff6e6e;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .detail {
+            margin-top: 10px;
+            line-height: 2em;
+            vertical-align: top;
+        }
+        
+        figure {
+            background: #333;
+            margin: 0 auto;
+            //width: 100%;    
+        
+            figcaption {
+                display: block;
+                background: red;
+            } 
+        }
+        ul{
+            padding: 0;
+            
+            li::before {
+                content: '●';
+                padding-right: 10px;
+            }
+        }
     }
+    
 }
 
+@media screen and (min-width: 480px) {
+    section {
+        
+        figure {
+            float: right;
+            width: 45%;
+            padding: 10px;
+        }
+        
+        .detail{
+            float: left;
+            width: 50%;
+            margin-top: 1px;
+        }
+    }
+    
+}
 // article: buttons
 #btn{
     

@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+body{
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    color: #666;
+}
+
+header{
+    height: 80px;
+    border-bottom: 1px #ccc solid;
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+    text-align: center;
+    color: #fff;
+    margin:0 auto;
+    font-size: 1.2em;
+    font-family: "Lato";
+    font-weight: 700;
+    line-height: 80px;
+    background: #ff5e00;
+}
+@media screen and (min-width: 1000px) {
+    #container{
+        margin: 0 auto;
+        max-width: 1000px;
+        
+        nav{
+            border: 1px #eee solid;
+            border-radius: 10px;
+            top: 120px;
+            float: left;
+            width: 160px;
+            overflow: hidden;
+            position: fixed;
+            box-shadow: 1px 1px 1px 1px #eee;
+            background: rgba(255,255,255,.9);
+
+            ul,li{
+                padding-left: 10px;
+                list-style: none;
+                color: #666;
+                font-weight: 700;
+                line-height: 32px;
+            }
+            a{
+                text-decoration: none;
+                color: #999;
+                font-weight: 400;
+                display: block;
+            }
+            a:hover{
+                color: #ff5e00;
+                font-weight: 700;
+            }
+            a.active{
+                color: #ff5e00;
+            }
+
+        }
+        
+        main{
+            width: 780px;
+            float: right;
+            padding: 0;
+            
+            iframe{
+                //padding: 20px;
+                box-sizing: border-box;
+                width: 100%;
+                height: calc(100vh - 80px);
+                border: 0px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 999px) {
+    #container{
+        margin: 0 auto;
+        
+        nav{
+            display: none;
+        }
+
+        main{
+
+            iframe{
+                //padding: 20px;
+                box-sizing: border-box;
+                width: 100vw;
+                height: calc(100vh - 80px);
+                border: 0px;
+            }
+        }
+    }
+}
