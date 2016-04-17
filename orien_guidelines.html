@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> ORIEN Design Guidelines 2 </title>
         <link rel="stylesheet" type="text/css" href="stylesheets/orien2.css">
     </head>
@@ -11,30 +11,36 @@
         <div id="container">
             <nav>
                 <ul>
-                    <li><a class="active" href="#">Intro</a></li>
+                    <li><a class="active" href="intro.html" target="content">Intro</a></li>
                     <li class="brand">Brand
                         <ul>
-                            <li><a href="#logo">Logo</a></li>
-                            <li><a href="#trademark">Trademark</a></li>
-                            <li><a href="#logotype">Logotype</a></li>
-                            <li><a href="#spacing">Spacing</a></li>
-                            <li><a href="#brand_colors">Colors</a></li>
-                            <li><a href="#usage">Usage</a></li>
+                            <li><a href="brand.html#logo" target="content">Logo</a></li>
+                            <li><a href="brand.html#trademark" target="content">Trademark</a></li>
+                            <li><a href="brand.html#logotype" target="content">Logotype</a></li>
+                            <li><a href="brand.html#spacing" target="content">Spacing</a></li>
+                            <li><a href="brand.html#brand_colors" target="content">Colors</a></li>
+                            <li><a href="brand.html#usage" target="content">Usage</a></li>
                         </ul>
                     </li>
                     <li class="web">Web
                         <ul>
-                            <li><a href="#web_colors">Colors</a></li>
-                            <li><a href="#typo">Typography</a></li>
-                            <li><a href="#btn">Buttons</a></li>
-                            <li><a href="#forms">Forms</a></li>
+                            <li><a href="web_colors.html" target="content">Colors</a></li>
+                            <li><a href="typo.html" target="content">Typography</a></li>
+                            <li><a href="btn.html" target="content">Buttons</a></li>
+                            <li><a href="forms.html" target="content">Forms</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-            
+            <script>
+        document.querySelector("nav").addEventListener("click", function(event){
+            document.querySelector("nav .active").classList.remove("active");
+            event.target.classList.add("active");
+            document.querySelector(".show").classList.remove("show");
+        }, false)
+        </script>
             <main>
-                <iframe src="forms.html" />
+                <iframe name="content" src="intro.html" />
             </main>
         </div>
     </body>
