@@ -13,6 +13,11 @@ body {
   overflow: hidden;
 }
 
+.noscroll {
+  overflow: hidden;
+  max-height: 100%;
+}
+
 header {
   height: 80px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
@@ -27,11 +32,7 @@ header {
   width: 100%;
 }
 
-@media screen and (max-width: 999px) {
-  header {
-    height: 50px;
-    line-height: 50px;
-  }
+@media screen and (max-width: 1024px) {
   header .title {
     padding-left: 30px;
   }
@@ -69,7 +70,7 @@ header {
     color: #fff;
     font-weight: 400;
   }
-  .menu nav li:nth-of-type(1) {
+  .menu nav .nav_first {
     display: none;
   }
   .menu nav > ul {
@@ -91,11 +92,12 @@ header {
   .menu.open {
     opacity: 1;
     visibility: visible;
+    transition: opacity 0.5s;
   }
   #nav_icon {
     position: fixed;
     right: 8vw;
-    top: 20px;
+    top: 35px;
     z-index: 9999;
     width: 30px;
     height: 30px;
@@ -164,7 +166,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1025px) {
   header {
     text-align: center;
   }
@@ -181,6 +183,9 @@ header {
     position: fixed;
     box-shadow: 1px 1px 1px 1px #eee;
     background: rgba(255, 255, 255, 0.9);
+  }
+  nav .nav_header {
+    display: none;
   }
   nav ul, nav li {
     padding-left: 10px;
@@ -206,37 +211,18 @@ header {
     width: 780px;
     margin: 0 auto;
   }
-}
-
-@media screen and (min-width: 1000px) {
   #container {
     margin: 0 auto;
   }
   #container main {
     padding: 0;
   }
-  #container main iframe {
-    box-sizing: border-box;
-    width: 100%;
-    margin-top: 80px;
-    height: calc(100vh - 80px);
-  }
-}
-
-@media screen and (max-width: 999px) {
-  #container {
-    margin: 0 auto;
-  }
-  #container main iframe {
-    box-sizing: border-box;
-    width: 100vw;
-    margin-top: 50px;
-    height: calc(100vh - 50px);
-    border: 0px;
-  }
 }
 
 #container iframe {
+  width: 100%;
+  margin-top: 80px;
+  height: calc(100vh - 80px);
   border: 0;
 }
 
@@ -298,10 +284,6 @@ article, .intro {
   display: block;
 }
 
-table {
-  width: 95%;
-}
-
 .img_bg {
   background: #333;
   display: block;
@@ -359,7 +341,7 @@ table {
 
 #brand figure {
   margin: 0 auto;
-  display: inline-block;
+  display: block;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -369,7 +351,7 @@ table {
   font-size: 0.8em;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   #brand .ul_flex li {
     margin: 10px 0;
   }
@@ -379,9 +361,21 @@ table {
   #brand figure img {
     width: 100%;
   }
+  .grid_swatch .ul_grid_flex li {
+    margin: 10px 0;
+  }
+  .grid_swatch .ul_grid_flex li .unit_light, .grid_swatch .ul_grid_flex li .unit_right {
+    margin-left: auto;
+  }
+  .swatch_1, .swatch_2, .swatch_3, .swatch_4, .swatch_5, .swatch_6, .swatch_7, .swatch_8, .swatch_9, .swatch_10 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   #brand .ul_flex li {
     width: 45%;
     margin: 0 10px;
@@ -392,27 +386,6 @@ table {
   #brand figure img {
     width: 80%;
   }
-}
-
-#logo table, #trademark table, #logotype table {
-  border-collapse: separate;
-  border-spacing: 20px;
-}
-
-#logo table td, #trademark table td, #logotype table td {
-  text-align: center;
-  color: #ccc;
-}
-
-#logo table tr:nth-of-type(1) td, #trademark table tr:nth-of-type(1) td, #logotype table tr:nth-of-type(1) td {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 30px;
-}
-
-#trademark table td:nth-of-type(2), #logotype table td:nth-of-type(2) {
-  background: black;
-  border: 1px solid black;
 }
 
 #forms ol, #forms ul, #forms li, #btn ol, #btn ul, #btn li, #typo ol, #typo ul, #typo li {
@@ -476,7 +449,44 @@ table {
   padding-right: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
+  .swatch_1, .swatch_2, .swatch_3, .swatch_4, .swatch_5, .swatch_6, .swatch_7, .swatch_8, .swatch_9, .swatch_10 {
+    width: 110px;
+    height: 150px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .grid_swatch .ul_grid_flex {
+    display: flex;
+  }
+  .grid_swatch .ul_grid_flex li {
+    width: 110px;
+    height: 150px;
+  }
+  .grid_swatch .ul_grid_flex li .name_light {
+    top: 10px;
+    font-size: 0.8em;
+    color: #fff;
+  }
+  .grid_swatch .ul_grid_flex li .name_dark {
+    top: 10px;
+    font-size: 0.8em;
+    color: #333;
+  }
+  .grid_swatch .ul_grid_flex li .unit_light {
+    top: 70px;
+    font-size: 0.6em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 0;
+  }
+  .grid_swatch .ul_grid_flex li .unit_dark {
+    top: 70px;
+    font-size: 0.6em;
+    color: rgba(74, 74, 74, 0.7);
+  }
   .section figure {
     float: right;
     width: 45%;
@@ -571,72 +581,13 @@ table {
 .grid_swatch .ul_grid_flex li .unit_light {
   font-size: 0.6em;
   color: rgba(255, 255, 255, 0.7);
-  margin-left: auto;
-  padding-right: 10px;
   line-height: 20px;
 }
 
 .grid_swatch .ul_grid_flex li .unit_dark {
   font-size: 0.6em;
   color: rgba(74, 74, 74, 0.7);
-  margin-left: auto;
-  padding-right: 10px;
   line-height: 20px;
-}
-
-.swatch_1, .swatch_2, .swatch_3, .swatch_4, .swatch_5, .swatch_6, .swatch_7, .swatch_8, .swatch_9, .swatch_10 {
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (max-width: 479px) {
-  .grid_swatch .ul_grid_flex li {
-    margin: 10px 0;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .swatch_1, .swatch_2, .swatch_3, .swatch_4, .swatch_5, .swatch_6, .swatch_7, .swatch_8, .swatch_9, .swatch_10 {
-    width: 110px;
-    height: 150px;
-    margin: 5px;
-    display: inline-block;
-  }
-  .grid_swatch .ul_grid_flex {
-    display: flex;
-  }
-  .grid_swatch .ul_grid_flex li {
-    width: 110px;
-    height: 150px;
-  }
-  .grid_swatch .ul_grid_flex li .name_light {
-    position: relative;
-    top: 10px;
-    left: 10px;
-    font-size: 0.8em;
-    color: #fff;
-  }
-  .grid_swatch .ul_grid_flex li .name_dark {
-    position: relative;
-    top: 10px;
-    left: 10px;
-    font-size: 0.8em;
-    color: #333;
-  }
-  .grid_swatch .ul_grid_flex li .unit_light {
-    position: relative;
-    left: 10px;
-    top: 70px;
-    font-size: 0.6em;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  .grid_swatch .ul_grid_flex li .unit_dark {
-    position: relative;
-    left: 10px;
-    top: 70px;
-    font-size: 0.6em;
-    color: rgba(74, 74, 74, 0.7);
-  }
 }
 
 #typo section:nth-of-type(2) ul {
@@ -687,8 +638,4 @@ table {
 
 #typo section:nth-of-type(2) .w7 {
   font-size: 1em;
-}
-
-#spacing td {
-  text-align: center;
 }

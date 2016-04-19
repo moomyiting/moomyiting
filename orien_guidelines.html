@@ -18,7 +18,7 @@
             <nav>
                 <div class="nav_header"><img src="images/orien/logo.svg"/></div>
                 <ul>
-                    <li><a class="active" href="intro.html" target="content">Intro</a></li>
+                    <li class="nav_first"><a class="active" href="intro.html" target="content">Intro</a></li>
                     <li class="brand">Brand
                         <ul>
                             <li><a href="brand.html#logo" target="content">Logo</a></li>
@@ -52,15 +52,17 @@
             $('#nav_icon').click(function(){
                 $(this).toggleClass('open');
                 $('.menu').toggleClass('open');
+                $('html, body').toggleClass('noscroll');
             });
 
             $("nav li").click(function(){
                 $('.menu, #nav_icon').removeClass('open');
+                $('html, body').removeClass('noscroll');
             });
        });
         </script>
             <main>
-                <iframe name="content" src="brand.html" />
+                <iframe name="content" src="intro.html" />
             </main>
         </div>
     </body>
