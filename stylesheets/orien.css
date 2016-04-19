@@ -9,11 +9,12 @@ body {
 
 #body_index {
   padding: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 header {
   height: 80px;
-  border-bottom: 1px #ccc solid;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   color: #fff;
   margin: 0 auto;
@@ -27,19 +28,24 @@ header {
 }
 
 @media screen and (max-width: 999px) {
+  header {
+    height: 50px;
+    line-height: 50px;
+  }
   header .title {
     padding-left: 30px;
   }
   .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     visibility: hidden;
-    background: rgba(0, 0, 0, 0.9);
-    opacity: 0;
-    z-index: 9999;
+    background: linear-gradient(to bottom, white 10%, rgba(255, 94, 0, 0.9) 100%);
+    opacity: 1;
+    z-index: 9998;
+    overflow: hidden;
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
@@ -47,15 +53,49 @@ header {
     -webkit-justify-content: center;
     justify-content: center;
   }
+  .menu .nav_header {
+    width: 100%;
+    text-align: center;
+    z-index: 10000;
+  }
+  .menu .nav_header img {
+    width: 55%;
+  }
+  .menu nav {
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  .menu nav a {
+    color: #fff;
+    font-weight: 400;
+  }
+  .menu nav li:nth-of-type(1) {
+    display: none;
+  }
+  .menu nav > ul {
+    display: flex;
+    list-style: none;
+    margin: 15px;
+    justify-content: space-around;
+  }
+  .menu nav li {
+    line-height: 10vh;
+  }
+  .menu nav ul, .menu nav li {
+    list-style: none;
+    padding: 0;
+  }
+  .menu nav > ul > li {
+    text-align: center;
+  }
   .menu.open {
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.5s;
   }
   #nav_icon {
     position: fixed;
     right: 8vw;
-    top: 35px;
+    top: 20px;
     z-index: 9999;
     width: 30px;
     height: 30px;
@@ -99,8 +139,11 @@ header {
     top: 10px;
     width: 60%;
   }
+  #nav_icon.open span {
+    background: #ff5e00;
+  }
   #nav_icon.open span:nth-child(1) {
-    top: 18px;
+    top: 8px;
     width: 100%;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
@@ -112,7 +155,7 @@ header {
     left: -60px;
   }
   #nav_icon.open span:nth-child(3) {
-    top: 18px;
+    top: 8px;
     width: 100%;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
@@ -175,8 +218,8 @@ header {
   #container main iframe {
     box-sizing: border-box;
     width: 100%;
-    top: 80px;
-    border: 0px;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
   }
 }
 
@@ -187,15 +230,14 @@ header {
   #container main iframe {
     box-sizing: border-box;
     width: 100vw;
+    margin-top: 50px;
+    height: calc(100vh - 50px);
     border: 0px;
   }
 }
 
 #container iframe {
-  width: 100vw;
-  height: calc(100vh - 80px);
-  margin-top: 80px;
-  border: 0px;
+  border: 0;
 }
 
 h1 {

@@ -16,6 +16,7 @@
         </div>
         <div class="menu">
             <nav>
+                <div class="nav_header"><img src="images/orien/logo.svg"/></div>
                 <ul>
                     <li><a class="active" href="intro.html" target="content">Intro</a></li>
                     <li class="brand">Brand
@@ -40,28 +41,27 @@
             </nav> 
         </div>
         <div id="container">
-            <!--script>
+            <script>
         document.querySelector("nav").addEventListener("click", function(event){
             document.querySelector("nav .active").classList.remove("active");
             event.target.classList.add("active");
-            document.querySelector(".show").classList.remove("show");
         }, false)
-        </script-->
-            <main>
-                <iframe name="content" src="intro.html" />
-            </main>
-        </div>
+        </script>
         <script>
         $(document).ready(function(){
-            $('#nav-icon').click(function(){
+            $('#nav_icon').click(function(){
                 $(this).toggleClass('open');
                 $('.menu').toggleClass('open');
             });
 
             $("nav li").click(function(){
-                $('.menu, #nav-icon').removeClass('open');
+                $('.menu, #nav_icon').removeClass('open');
             });
        });
         </script>
+            <main>
+                <iframe name="content" src="brand.html" />
+            </main>
+        </div>
     </body>
 </html>
