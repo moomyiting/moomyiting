@@ -2,8 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
 body{
-    background: url(../images/index/bkg2.png);
-    background-size: cover;
+    background: #9DB9CB;
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
@@ -24,6 +23,8 @@ body{
         width: 100vw;
         height: 100vh;
         //background: radial-gradient(ellipse at center, rgba(255,255,255,.6) 0%,rgba(255,255,255,.3) 71%,rgba(255,255,255,.4) 100%,rgba(255,255,255,1) 100%);
+        background: url(../images/index/bkg.jpg);
+        background-size: cover;
         box-shadow: 0 0 0 20px white inset;
     }
 }
@@ -35,21 +36,16 @@ body{
     z-index: 8000;
     width: 90vw;
     height: 100vh;
-    
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     
     #info{
-        background: rgba(255,255,255,.6);
         padding: 40px;
-        margin-left: auto;
+        
         line-height: 2em;
         
         h1 {
             margin-right: auto;
-            font-size: 3em;
+            font-size: 2em;
             text-shadow: 1px 1px 1px #fff;
         }
 
@@ -66,7 +62,6 @@ body{
     
     main {
         display: flex;
-        align-items: flex-start;
         flex-direction: column;
     }
 }
@@ -75,12 +70,12 @@ body{
 	outline: none;
 	text-decoration: none;
 	position: relative;
-	font-size: 4em;
+	font-size: 3.5em;
 	color: #fff;
 	display: inline-block;
+    //background: red;
     
     text-transform: uppercase;
-    //font-weight: 900;
     overflow: hidden;
     line-height: 1.5;
     transition: all 0.5s ease;
@@ -93,7 +88,7 @@ body{
         content: '';
         position: absolute;
         height: 16px;
-        width: 100%;
+        width: calc(100% + 1px);
         top: 50%;
         margin-top: -8px;
         left: 0;
@@ -127,9 +122,55 @@ body{
         width: 100%;
     }
 }
+@media screen and (min-width: 901px){
+    #container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+        main{
+            align-items: flex-start; 
+        }
+        
+        #info{
+            background: rgba(255,255,255,.6);
+            //margin-left: auto;
+        }
+    }
+    .link {
+        font-size: 4em;
+    }
+}
 
 
+@media screen and (max-width: 900px){
+    #container{
+        //background: green;
+        flex-direction: column;
+        align-items: center;
+        //margin: 0 auto;
+        text-align: center;
+        
+        main{
+            height: calc(60vh - 100px);
+            text-align: center;
+            justify-content: space-between;
+        }
+       
+        #info{
+            //background: red;
+        }
+    }   
+}
 
-
+@media screen and (max-width: 576px){
+    body::before{
+        box-shadow: none;
+    }
+    .link{
+        font-size: 1.5em;
+    }
+    
+}
 
 

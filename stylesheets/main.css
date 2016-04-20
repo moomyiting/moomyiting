@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 body {
-  background: url(../images/index/bkg2.png);
-  background-size: cover;
+  background: #9DB9CB;
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
@@ -23,6 +22,8 @@ body::before {
   top: 0;
   width: 100vw;
   height: 100vh;
+  background: url(../images/index/bkg.jpg);
+  background-size: cover;
   box-shadow: 0 0 0 20px white inset;
 }
 
@@ -31,21 +32,16 @@ body::before {
   width: 90vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
 }
 
 #container #info {
-  background: rgba(255, 255, 255, 0.6);
   padding: 40px;
-  margin-left: auto;
   line-height: 2em;
 }
 
 #container #info h1 {
   margin-right: auto;
-  font-size: 3em;
+  font-size: 2em;
   text-shadow: 1px 1px 1px #fff;
 }
 
@@ -61,7 +57,6 @@ body::before {
 
 #container main {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -69,7 +64,7 @@ body::before {
   outline: none;
   text-decoration: none;
   position: relative;
-  font-size: 4em;
+  font-size: 3.5em;
   color: #fff;
   display: inline-block;
   text-transform: uppercase;
@@ -86,7 +81,7 @@ body::before {
   content: '';
   position: absolute;
   height: 16px;
-  width: 100%;
+  width: calc(100% + 1px);
   top: 50%;
   margin-top: -8px;
   left: 0;
@@ -118,4 +113,43 @@ body::before {
 
 .link:hover::before {
   width: 100%;
+}
+
+@media screen and (min-width: 901px) {
+  #container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #container main {
+    align-items: flex-start;
+  }
+  #container #info {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  .link {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #container main {
+    height: calc(60vh - 100px);
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body::before {
+    box-shadow: none;
+  }
+  .link {
+    font-size: 1.5em;
+  }
 }
