@@ -10,9 +10,7 @@ body{
     text-align: center;
     color: #FFF;
     font-family: 'Lato';
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
     
     &::before{
         content: '';
@@ -25,12 +23,29 @@ body{
         background-size: cover;
     }
 }
+.large-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+        z-index: 1;
+        background-image: url('../images/index/bkg.jpg');
+	}
 
-
-
+#con {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin:  0 auto;
+    z-index: 8000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 #container {
-    z-index: 8000;
     width: 90vw;
     height: 100vh;
     display: flex;
@@ -77,9 +92,11 @@ body{
 }
 
 @media screen and (min-width: 901px){
-    body::before{
+    
+    .large-header{
         box-shadow: 0 0 0 20px white inset;
     }
+    
     #container{
         flex-direction: row;
         justify-content: space-between;
