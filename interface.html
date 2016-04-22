@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+        <title>:: Estelle - UI Design ::</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/inter.css">
+        <link rel="shortcut icon" href="images/index/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="top clearfix">
+            <a href="http://moomyiting.github.io">
+                <b>GO</b> Moomyiting.github.io
+            </a>
+        </div>
+        <header>
+            <h1>
+                Estelle Chen
+                <span>UI Design</span>
+            </h1>
+        </header>
+        <main>
+            <figure>
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/44bbd929191531.55e6dc4c5514a.png"/>
+                <figcaption>
+                    Template 57664 - Jacob Photographer Responsive Joomla Template
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="https://d13yacurqjgara.cloudfront.net/users/729829/screenshots/1922189/attachments/330361/galshir.png"/>
+                <figcaption>
+                    Template 57664 - Jacob Photographer Responsive Joomla Template
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="http://assets.materialup.com/uploads/69c63e49-2b1f-41dd-aed0-42b6966f16bf/preview.png"/>
+                <figcaption>
+                    Template 57664 - Jacob Photographer Responsive Joomla Template
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="http://a1.files.theultralinx.com/image/upload/MTM0MTgzMTQ3MzM5MzAyOTIy.gif"/>
+                <figcaption>
+                    Template 57664 - Jacob Photographer Responsive Joomla Template
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="http://gdj.gdj.netdna-cdn.com/wp-content/uploads/2014/05/puikit2.jpg"/>
+                <figcaption>
+                    Template 57664 - Jacob Photographer Responsive Joomla Template
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="http://a4.files.theultralinx.com/image/upload/c_fit,cs_srgb,w_620/MTM0MTgzMTQ3MzM5MzU2NjM4.png"/>
+                <figcaption>
+                    Template 57664 - Jacob Photographer Responsive Joomla Template
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="http://a4.files.theultralinx.com/image/upload/MTM0MTgzMTQ3MzM5Mjg5ODc0.gif"/>
+                <figcaption>
+                    Template 57664 - Jacob Photographer Responsive Joomla Template
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="http://a5.files.theultralinx.com/image/upload/c_fit,cs_srgb,w_620/MTM0MTgzMTQ3NjA3NzI1MzMw.png"/>
+                <figcaption>
+                    Template 57664 - Jacob Photographer Responsive Joomla Template
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="http://a3.files.theultralinx.com/image/upload/MTM0MTgzMTQ3NjA3ODY5NDUw.gif"/>
+                <figcaption>
+                    Template 57664 - Jacob Photographer Responsive Joomla Template
+                </figcaption>
+            </figure>
+        </main>
+        <script>
+            var $lightbox = $("<div class='lightbox'></div>");
+            var $img = $("<img>");
+            var $caption = $("<p class='caption'></p>");
+
+
+            // Add image and caption to lightbox
+
+            $lightbox
+                .append($img)
+                .append($caption);
+
+            // Add lighbox to document
+
+            $('body').append($lightbox);
+
+
+            $('figure').click(function (e) {
+                e.preventDefault();
+
+                // Get image link and description
+                var src = $(this).children('img').attr("src");
+                var cap = $(this).children('img').attr("alt");
+
+                // Add data to lighbox
+                
+                $img.attr('src',src);
+                $caption.text(cap);
+
+                // $lightbox.append('<img src="' + src + '"></img><p class="caption">' + caption + '</p>');
+
+                // Show lightbox
+
+                $lightbox.fadeIn('fast');
+
+                $lightbox.click(function () {
+                    $lightbox.fadeOut('fast');
+                    $('body').removeClass('noscroll');
+                });
+                $('body').addClass('noscroll');
+            });
+        </script>
+        <div class="lightbox">
+            <img>
+            <p class="caption"></p>
+        </div>
+
+    </body>
+</html>

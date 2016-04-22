@@ -1,0 +1,172 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir Next", Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.top {
+  line-height: 24px;
+  font-size: 11px;
+  text-transform: uppercase;
+  z-index: 9;
+  position: relative;
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.top a {
+  padding: 0px 10px;
+  letter-spacing: 1px;
+  color: #333;
+  text-shadow: 0 -1px 0 #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.top a:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #00a9e0;
+}
+
+header {
+  padding: 2em 1em 4em;
+  text-align: center;
+}
+
+h1 {
+  margin: 0.5em 0 0;
+  letter-spacing: -1px;
+  font-size: 3em;
+  line-height: 1;
+  font-weight: normal;
+  color: #00A9E0;
+}
+
+h1 span {
+  display: block;
+  padding: 0.5em 0 1em;
+  color: #999;
+  font-weight: normal;
+  font-size: 0.45em;
+  letter-spacing: 0;
+}
+
+main {
+  column-width: 250px;
+  column-gap: 0px;
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+  -webkit-column-width: 250px;
+  -webkit-column-gap: 0px;
+}
+
+main figure {
+  width: 260px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: white;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 5px;
+  transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+  margin: 15px;
+}
+
+main figure.filter {
+  -webkit-filter: saturate(0.5);
+}
+
+main figure img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+main figure figcaption {
+  font-size: .9em;
+  color: #666;
+}
+
+main:hover figure:not(:hover) {
+  opacity: 0.4;
+}
+
+main:hover figure:hover {
+  color: #00a9e0;
+  transform: scale(1.03);
+}
+
+main:hover figure:hover.filter {
+  -webkit-filter: none;
+}
+
+.lightbox {
+  display: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.lightbox img {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.lightbox .caption {
+  margin: 15px auto;
+  width: 50%;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #eee;
+}
+
+.noscroll {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    margin: 0;
+    column-gap: 0px;
+    -webkit-column-gap: 0;
+  }
+  main figure {
+    width: 100%;
+    pointer-events: none;
+  }
+  .lightbox {
+    height: 100%;
+    position: fixed;
+  }
+}
