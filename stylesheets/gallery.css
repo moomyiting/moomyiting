@@ -7,13 +7,37 @@
 
 .clearfix:before,
 .clearfix:after {
-	display: table;
-	content: '';
+    content: " ";
+    display: table;
 }
 
 .clearfix:after {
-	clear: both;
+    clear: both;
 }
+
+.top {
+	line-height: 24px;
+	font-size: 11px;
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
+
+.top a {
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	text-shadow: 0 -1px 0 #fff;
+	display: inline-block;
+}
+
+.top a:hover {
+	background: rgba(255,255,255,0.8);
+	color: #00a9e0;
+}
+
+
 
 body {
 	font-family: "Avenir Next", Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -30,7 +54,7 @@ body {
 
 a {
 	outline: none;
-	color: #00a9e0;
+	color: #555;
 	text-decoration: none;
 }
 
