@@ -64,7 +64,7 @@ h1 span {
 	display: block;
 	padding: 0.5em 0 1em;
 	color: #999;
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 0.45em;
 	letter-spacing: 0;
 }
@@ -77,6 +77,8 @@ main{
 	margin: 0 auto;
     -webkit-column-width: 250px;
     -webkit-column-gap: 0px;
+    -moz-column-width: 250px;
+    -moz-column-gap: 0px;
     
     figure{
         width: 260px;
@@ -91,8 +93,8 @@ main{
         margin: 15px;
         
         &.filter{
-            -webkit-filter:saturate(0.5);
-            //-webkit-filter:grayscale(1);
+            //-webkit-filter:saturate(0.5);
+            //filter:saturate(0.5);
         }
 
         img{
@@ -123,7 +125,7 @@ main{
         }
         
         figcaption {
-            }
+        }
         
     }
 }
