@@ -69,6 +69,16 @@ body{
         h1, h2 {
             Color: #00a9e0;
         }
+        .social{
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #ccc;
+            padding-top: 1em;
+            
+            img{
+                width: 24px;
+            }
+        }
     }
     
     main {
