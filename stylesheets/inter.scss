@@ -1,3 +1,5 @@
+$main-color: #00a9e0;
+
 *,
 *:after,
 *:before {
@@ -243,9 +245,48 @@ h2{
     padding-bottom: 2em;
 }
 
+h3{
+    font-size: 1.8em;
+    color: $main-color;
+}
+
 .noscroll{
     overflow: hidden;
     max-height: 100vh;
+}
+
+.sidenav{
+    height: 100vh;
+    width: 0;
+    position: fixed; 
+    z-index: 19999; 
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,1); 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+    white-space:nowrap;
+    
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 1.2em;
+        color: #fff;
+        display: block;
+        transition: 0.3s
+            
+        &:hover{
+            color: #ff6699;
+        }
+    }
 }
 
 @media screen and (max-width: 750px) { 
