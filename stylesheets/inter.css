@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 *,
 *:after,
 *:before {
@@ -152,7 +153,13 @@ main {
   overflow: hidden;
   color: #666;
   margin-bottom: 5em; }
-  .container img {
+  .container li {
+    line-height: 2em; }
+  .container .intro {
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 2em; }
+  .container .img_p {
     width: inherit;
     padding-top: 3em; }
   .container a {
@@ -185,7 +192,8 @@ h2 {
 
 h3 {
   font-size: 1.8em;
-  color: #00a9e0; }
+  color: #666;
+  font-family: 'Abel', sans-serif; }
 
 .noscroll {
   overflow: hidden;
