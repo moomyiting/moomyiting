@@ -301,6 +301,18 @@ h3{
         }
     }
 }
+#dating{
+    position: fixed;
+    z-index: 9999;
+    bottom: 0px;
+    height: 4vh;
+    background: rgba(255,255,255,.5);
+    //background: black;
+    width: 100vw;
+    text-align: center;
+    border-top: 1px dashed #ccc;
+    color:#666;
+}
 
 @media screen and (max-width: 750px) { 
     main {
