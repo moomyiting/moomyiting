@@ -208,9 +208,7 @@ main{ //for lightbox page
         line-height: 2em;
     }
     .intro{
-        //font-family: 'Playfair Display', serif;
         font-size: 1.2em;
-        //font-style: italic;
         text-align: justify;
         line-height: 2em;
     }
@@ -218,6 +216,9 @@ main{ //for lightbox page
         width: inherit;
         padding-top: 3em;
     }
+    .img_d{
+            width: 160px;
+        }
     
     a{
         line-height: 3em;
@@ -336,6 +337,15 @@ h3{
         
         img{
             width: 100vw;
+        }
+        .img_d{
+            width: 40vw;
+        }
+        
+        .intro{
+            line-height: 2em;
+            font-size: 1em;
+            text-align: left;
         }
     }
 }
