@@ -1,5 +1,14 @@
 $main-color: #00a9e0;
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
 *,
 *:after,
@@ -9,11 +18,12 @@ $main-color: #00a9e0;
 }
 
 body{
-    //background: pink;
-    font-family: "Avenir Next", Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+    //font-family: "Avenir Next", Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-family:  'Lato', serif;
+    font-weight: 200;
     //overflow-x: hidden;
     margin: 0 auto;
-    //min-height: 1000px;
+    letter-spacing: 1px;
 }
 
 .clearfix:before,
@@ -85,8 +95,8 @@ header {
 }
 
 h1 {
-	margin: 0.5em 0 0;
-	letter-spacing: -1px;
+	margin: 0.5em 0 0 0;;
+	//letter-spacing: -1px;
 	font-size: 3em;
 	line-height: 1;
 	font-weight: normal;
@@ -96,11 +106,15 @@ h1 {
 h1 span {
 	display: block;
 	padding: 0.5em 0 1em;
-	color: #999;
-	font-weight: 300;
-	font-size: 0.45em;
+	color: #ccc;
+    font-style: italic;
+	font-size: .4em;
 	letter-spacing: 0;
+    font-family: 'Alto';
 }
+
+
+
 
 main{ //for lightbox page
     column-width: 250px;
@@ -200,7 +214,7 @@ main{ //for lightbox page
     width: 60vw;
 	max-width: 1150px;
 	margin: 0 auto;
-    overflow: hidden;
+    //overflow: hidden;
     color: #666;
     margin-bottom: 5em;
     
@@ -211,6 +225,8 @@ main{ //for lightbox page
         font-size: 1.2em;
         text-align: justify;
         line-height: 2em;
+        font-weight: 300;
+        color: #333;
     }
     .img_p{
         width: inherit;
@@ -232,6 +248,27 @@ main{ //for lightbox page
             font-size: .8em;
             font-weight: 100;   
             //box-shadow: 1px 1px 5px #666;
+        }
+    }
+    
+    .abstract{
+        background: #eee;
+        height: 100%;
+        padding: 1em;
+        display: flex;
+        align-content: space-between;
+        border-bottom: 3px solid #666;
+        font-family: 'Lato';
+        font-size: .9em;
+        letter-spacing: 1px;
+        
+        div{
+            margin: 0 2em;
+        }
+        h5{
+            font-weight: 800;
+            font-size: 1em;
+            color: #333;
         }
     }
 }
@@ -303,16 +340,16 @@ h3{
     }
 }
 #dating{
-    position: fixed;
+    //position: fixed;
     z-index: 9999;
-    bottom: 0px;
+    top: 0px;
     height: 4vh;
-    background: rgba(255,255,255,.5);
+    //background: rgba(255,255,255,.5);
     //background: black;
     width: 100vw;
     text-align: center;
     border-top: 1px dashed #ccc;
-    color:#666;
+    color:#eee;
 }
 
 @media screen and (max-width: 750px) { 
@@ -330,6 +367,9 @@ h3{
         height: 100%;
         position: fixed;
     }
+    header{
+        padding: 2em 1em;
+    }
     .container{
         width: 90vw;
         margin: 1em;
@@ -344,8 +384,13 @@ h3{
         
         .intro{
             line-height: 2em;
-            font-size: 1em;
+            font-size: 1.2em;
             text-align: left;
+        }
+        .abstract{
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
         }
     }
 }
