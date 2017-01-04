@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC");
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
 *,
 *:after,
 *:before {
@@ -6,8 +12,10 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Avenir Next", Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
-  margin: 0 auto; }
+  font-family: 'Lato', serif;
+  font-weight: 200;
+  margin: 0 auto;
+  letter-spacing: 1px; }
 
 .clearfix:before,
 .clearfix:after {
@@ -65,8 +73,7 @@ header {
   text-align: center; }
 
 h1 {
-  margin: 0.5em 0 0;
-  letter-spacing: -1px;
+  margin: 0.5em 0 0 0;
   font-size: 3em;
   line-height: 1;
   font-weight: normal;
@@ -75,10 +82,11 @@ h1 {
 h1 span {
   display: block;
   padding: 0.5em 0 1em;
-  color: #999;
-  font-weight: 300;
-  font-size: 0.45em;
-  letter-spacing: 0; }
+  color: #ccc;
+  font-style: italic;
+  font-size: .4em;
+  letter-spacing: 0;
+  font-family: 'Alto'; }
 
 main {
   column-width: 250px;
@@ -150,7 +158,6 @@ main {
   width: 60vw;
   max-width: 1150px;
   margin: 0 auto;
-  overflow: hidden;
   color: #666;
   margin-bottom: 5em; }
   .container li {
@@ -158,7 +165,9 @@ main {
   .container .intro {
     font-size: 1.2em;
     text-align: justify;
-    line-height: 2em; }
+    line-height: 2em;
+    font-weight: 300;
+    color: #333; }
   .container .img_p {
     width: inherit;
     padding-top: 3em; }
@@ -175,6 +184,26 @@ main {
       color: #fff;
       font-size: .8em;
       font-weight: 100; }
+  .container .abstract {
+    background: #eee;
+    height: 100%;
+    padding: 1em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    border-bottom: 3px solid #666;
+    font-family: 'Lato';
+    font-size: .9em;
+    letter-spacing: 1px; }
+    .container .abstract div {
+      margin: 0 2em; }
+    .container .abstract h5 {
+      font-weight: 800;
+      font-size: 1em;
+      color: #333; }
 
 .share {
   width: 60vw;
@@ -230,15 +259,13 @@ h3 {
       color: #ff6699; }
 
 #dating {
-  position: fixed;
   z-index: 9999;
-  bottom: 0px;
+  top: 0px;
   height: 4vh;
-  background: rgba(255, 255, 255, 0.5);
   width: 100vw;
   text-align: center;
   border-top: 1px dashed #ccc;
-  color: #666; }
+  color: #eee; }
 
 @media screen and (max-width: 750px) {
   main {
@@ -252,6 +279,8 @@ h3 {
   .lightbox {
     height: 100%;
     position: fixed; }
+  header {
+    padding: 2em 1em; }
   .container {
     width: 90vw;
     margin: 1em;
@@ -262,5 +291,11 @@ h3 {
       width: 40vw; }
     .container .intro {
       line-height: 2em;
-      font-size: 1em;
-      text-align: left; } }
+      font-size: 1.2em;
+      text-align: left; }
+    .container .abstract {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 0;
+      margin: 0; } }
