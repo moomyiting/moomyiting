@@ -16,7 +16,7 @@ body {
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: url(../images/index/bkg.jpg);
+    background: url(../images/index/bkg2.jpg);
     background-size: cover; }
 
 .large-header {
@@ -27,7 +27,7 @@ body {
   background-size: cover;
   background-position: center center;
   z-index: 1;
-  background-image: url("../images/index/bkg.jpg"); }
+  background-image: url("../images/index/bkg2.jpg"); }
 
 #con {
   position: absolute;
