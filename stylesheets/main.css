@@ -103,6 +103,13 @@ body {
   font-weight: 400;
   color: #000; }
 
+@media only screen and (max-width: 901px) and (orientation: landscape) {
+  main {
+    background: #000;
+    display: none;
+    width: 0px;
+    overflow: hidden; } }
+
 @media screen and (min-width: 901px) {
   .large-header {
     box-shadow: 0 0 0 20px white inset; }

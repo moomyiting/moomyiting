@@ -112,6 +112,14 @@ body{
     }
 }
 
+@media only screen and (max-width: 901px) and  (orientation: landscape) {
+    main{
+        background: #000;
+        display: none;
+        width: 0px;
+        overflow: hidden;
+    }
+}
 
 @media screen and (min-width: 901px){
     
