@@ -161,7 +161,8 @@ main {
   max-width: 1150px;
   margin: 0 auto;
   color: #666;
-  margin-bottom: 5em; }
+  margin-bottom: 5em;
+  line-height: 2em; }
   .container li {
     line-height: 2em; }
   .container .intro {
