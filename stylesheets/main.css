@@ -189,16 +189,16 @@ body {
       -ms-flex-pack: justify;
       justify-content: space-between; }
     #container .link_detail {
-      display: none; } }
+      color: #fff; } }
 
 @media screen and (min-width: 578px) and (max-width: 900px) {
   .link {
     font-size: 3em; }
   .link_detail {
-    display: none; } }
+    color: #fff; } }
 
 @media screen and (max-width: 576px) {
   .link {
     font-size: 1.5em; }
   .link_detail {
-    display: none; } }
+    color: #fff; } }
