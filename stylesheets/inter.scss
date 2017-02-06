@@ -204,7 +204,7 @@ main{ //for lightbox page
 }
 
 .container{
-    width: 70vw;
+    width: 60vw;
 	max-width: 1150px;
 	margin: 0 auto;
     //overflow: hidden;
@@ -223,7 +223,7 @@ main{ //for lightbox page
         color: #333;
     }
     .img_p{
-        width: inherit;
+        width: 100%;
         padding-top: 3em;
     }
     .img_d{
@@ -346,6 +346,7 @@ figure.effect-ming:hover img {
     margin: 0 auto;
     width: 65vw;
     padding-bottom: 10vh;
+    
 }
 .grid figure {
 	position: relative;

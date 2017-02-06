@@ -151,7 +151,7 @@ main {
     color: #eee; }
 
 .container {
-  width: 70vw;
+  width: 60vw;
   max-width: 1150px;
   margin: 0 auto;
   color: #666;
@@ -166,7 +166,7 @@ main {
     font-weight: 300;
     color: #333; }
   .container .img_p {
-    width: inherit;
+    width: 100%;
     padding-top: 3em; }
   .container .img_d {
     width: 160px; }
