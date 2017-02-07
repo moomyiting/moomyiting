@@ -293,7 +293,13 @@ figure.effect-ming figcaption::before {
 	-webkit-transform: scale3d(1.4,1.4,1);
 	transform: scale3d(1.4,1.4,1);
 }
-
+h8 {
+    display: block;
+    width: 100vw;
+    color: #999;
+    font-size: 1em;
+    font-style: italic;
+}
 figure.effect-ming h2 {
 	margin-top: 80%;
 	-webkit-transition: -webkit-transform 0.35s;
@@ -342,11 +348,13 @@ figure.effect-ming:hover img {
 
 /* Common style */
 .grid{
-    padding-top: 10vh;
+    padding-top: 5vh;
     margin: 0 auto;
-    width: 65vw;
+    width: 50vw;
     padding-bottom: 10vh;
-    
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: center;
 }
 .grid figure {
 	position: relative;
@@ -522,8 +530,7 @@ h2{
 
 h3{
     font-size: 1.8em;
-    color: #a090e2;
-    font-family: 'Abel', sans-serif;
+    color: $main-color;
 }
 
 .noscroll{
@@ -583,6 +590,11 @@ h3{
     height:100%;
 
 }
+@media screen and (min-width: 1025px) { 
+    .grid{
+        width: 65vw;
+    }
+}
 
 @media screen and (min-width: 751px) and (max-width: 1024px){
     .container{
@@ -639,11 +651,38 @@ h3{
     .grid{
         margin: 0 auto;
         align-content: center;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .grid figure{
+       width:98vw;
+        height: auto;
+    }
+    h8{
+        text-align: center;
     }
 }
 @media screen and (max-width: 320px){
+    
     .grid{
         width: 100vw;
         overflow: hidden;
+    }
+    .grid figure{
+       width:98vw;
+        max-height: 220px;
+        
+    }
+}
+
+@media only screen and (max-width: 746px) and  (orientation: landscape) {
+    .grid{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .grid figure{
+       width:48vw;
+        max-height: 220px;
+        
     }
 }
