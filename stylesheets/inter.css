@@ -154,6 +154,7 @@ main {
   width: 60vw;
   max-width: 1150px;
   margin: 0 auto;
+  overflow: hidden;
   color: #666;
   margin-bottom: 5em;
   line-height: 2em; }
@@ -167,7 +168,7 @@ main {
     color: #333; }
   .container .img_p {
     width: 100%;
-    padding-top: 3em; }
+    padding-top: 1em; }
   .container .img_d {
     width: 160px; }
   .container a {
@@ -365,7 +366,7 @@ figure.effect-ming:hover img {
   color: inherit;
   background: linear-gradient(45deg, #a4e4f4 3%, #c595d8 98%);
   cursor: pointer;
-  padding: 25px 80px;
+  padding: 15px 50px;
   display: inline-block;
   margin: 5px 10px;
   text-transform: uppercase;
@@ -386,7 +387,7 @@ figure.effect-ming:hover img {
   transition: all 0.3s; }
 
 .btn-4 {
-  border-radius: 50px;
+  border-radius: 5px;
   border: 3px solid #fff;
   color: #fff;
   overflow: hidden; }
@@ -421,7 +422,12 @@ figure.effect-ming:hover img {
   opacity: 1; }
 
 .icon-arrow-right:before {
-  content: ">"; }
+  content: "-"; }
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 2px solid #f2f2f2; }
 
 .share {
   width: 60vw;
@@ -441,7 +447,8 @@ h2 {
 
 h3 {
   font-size: 1.8em;
-  color: #a090e2; }
+  color: #a090e2;
+  text-transform: uppercase; }
 
 .noscroll {
   overflow: hidden;
