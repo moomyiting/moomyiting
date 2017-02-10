@@ -126,7 +126,6 @@ body {
       -webkit-align-items: flex-start;
       -ms-flex-align: start;
       align-items: flex-start;
-      height: 30vh;
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
       justify-content: space-between;
@@ -139,7 +138,7 @@ body {
       -ms-flex-order: 2;
       order: 2; }
   .link {
-    font-size: 1.5em;
+    font-size: 3em;
     transition: all 0.5s ease;
     color: white; }
     .link:hover {
@@ -189,7 +188,6 @@ body {
     align-items: center;
     text-align: center; }
     #container main {
-      height: calc(60vh - 100px);
       text-align: center;
       -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -205,6 +203,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .link {
-    font-size: 1.5em; }
+    font-size: 2em;
+    line-height: 3em; }
   .link_detail {
     color: #fff; } }

@@ -136,7 +136,7 @@ body{
         
         main{
             align-items: flex-start; 
-            height: 30vh;
+            //height: 30vh;
             justify-content: space-between;
             order:1;
         }
@@ -147,7 +147,7 @@ body{
         }
     }
     .link {
-        font-size: 1.5em;
+        font-size: 3em;
         transition: all 0.5s ease;
         color: white;
 
@@ -209,7 +209,7 @@ body{
         text-align: center;
         
         main{
-            height: calc(60vh - 100px);
+            //height: calc(60vh - 100px);
             text-align: center;
             justify-content: space-between;
         }
@@ -233,7 +233,8 @@ body{
 @media screen and (max-width: 576px){
    
     .link{
-        font-size: 1.5em;
+        font-size: 2em;
+        line-height: 3em;
     }
     .link_detail{
             //display:none;
