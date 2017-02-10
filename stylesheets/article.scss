@@ -15,7 +15,7 @@ body{
     font-family: 'Lato';
     font-weight: lighter;
 	line-height: 2;
-    //font-size: 22px;
+    //font-size: 15px;
 }
 
 /* Header */
@@ -102,6 +102,7 @@ button.trigger {
 	color: transparent;
 	font-size: 2em;
 	cursor: pointer;
+    font-weight: 700;
 }
 
 .container:not(.notrans) button.trigger {
@@ -122,11 +123,12 @@ button.trigger::before {
 	left: -100%;
 	padding: 0.8em;
 	width: 300%;
-	color: #fff;
+	color: $main-color;
 	content: attr(data-info);
 	font-size: 0.35em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+    text-shadow: 1px 1px 1px #fff;
 }
 
 button.trigger:focus {
@@ -181,7 +183,7 @@ button.trigger span::before {
 
 .content > div:not(.title) p {
 	margin: 0 auto 1.5em auto;
-    font-size: 1rem;
+    font-size: 1em;
     text-align: justify;
 }
 
@@ -297,6 +299,8 @@ h6{
 .intro-effect-fadeout:not(.notrans) .header h1 {
 	-webkit-transition-property: color;
 	transition-property: color;
+    font-size: 4em;
+    font-family: 'Lato';
 }
 
 .intro-effect-fadeout:not(.notrans) .header p,

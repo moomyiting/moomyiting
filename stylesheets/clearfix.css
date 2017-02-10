@@ -60,7 +60,7 @@
   z-index: 19999;
   top: 0;
   right: 0;
-  background: black;
+  background: linear-gradient(45deg, rgba(200, 50, 255, 0.5) 0%, #89d5ff 100%);
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
