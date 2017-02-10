@@ -585,6 +585,19 @@ h3{
     overflow:hidden;
 }
 
+.video_demo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    
+    video{
+        width: 20%;
+        height: 25%;
+        box-shadow: 0px 8px 15px #ccc;
+       // margin: 15px;
+    }
+}
  
 
 .video-container iframe,.video-container object,.video-container embed{

@@ -489,6 +489,20 @@ h3 {
   height: 0;
   overflow: hidden; }
 
+.video_demo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px; }
+  .video_demo video {
+    width: 20%;
+    height: 25%;
+    box-shadow: 0px 8px 15px #ccc; }
+
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
