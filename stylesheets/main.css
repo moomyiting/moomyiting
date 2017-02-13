@@ -111,7 +111,7 @@ body {
 
 @media screen and (min-width: 901px) {
   .large-header {
-    box-shadow: 0 0 0 20px white inset; }
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.6) inset; }
   #container {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
