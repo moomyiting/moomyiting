@@ -560,7 +560,7 @@ h3 {
     overflow: hidden; }
   .grid figure {
     width: 98vw;
-    height: auto; }
+    max-height: 100%; }
   h8 {
     text-align: center; } }
 
@@ -570,7 +570,7 @@ h3 {
     overflow: hidden; }
   .grid figure {
     width: 98vw;
-    max-height: 220px; } }
+    max-height: 100%; } }
 
 @media only screen and (max-width: 746px) and (orientation: landscape) {
   .grid {
@@ -578,4 +578,4 @@ h3 {
     overflow: hidden; }
   .grid figure {
     width: 48vw;
-    max-height: 220px; } }
+    max-height: 100%; } }
