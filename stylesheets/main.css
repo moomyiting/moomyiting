@@ -16,8 +16,37 @@ body {
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: url(../images/index/bkg2.jpg);
-    background-size: cover; }
+    background: linear-gradient(45deg, #8c6de1 0%, white 100%), url(../images/index/bkg.svg), url(../images/index/info.png);
+    background-blend-mode: hard-light;
+    background-size: 200% 200%, 40%, 100%;
+    background-repeat: no-repeat, repeat;
+    -webkit-animation: bgga 30s ease infinite;
+    animation: bgga 30s ease infinite; }
+
+@-webkit-keyframes bgga {
+  0% {
+    background-position: 0% 96%, 0% 30%, 100% 100%; }
+  50% {
+    background-position: 100% 5%, 31% 60%, 100% 100%; }
+  100% {
+    background-position: 0% 96%, 61% 100%, 100% 100%; } }
+
+@keyframes bgga {
+  0% {
+    background-position: 0% 96%, 0% 30%, 100% 100%; }
+  50% {
+    background-position: 100% 5%, 31% 60%, 100% 100%; }
+  100% {
+    background-position: 0% 96%, 61% 100%, 100% 100%; } }
+  body::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-blend-mode: screen; }
 
 .large-header {
   position: fixed;
@@ -199,11 +228,15 @@ body {
   .link {
     font-size: 3em; }
   .link_detail {
-    color: #fff; } }
+    color: #fff; }
+  body::before {
+    background-size: 200% 200%, 70%, 200%; } }
 
 @media screen and (max-width: 576px) {
   .link {
     font-size: 2em;
     line-height: 3em; }
   .link_detail {
-    color: #fff; } }
+    color: #fff; }
+  body::before {
+    background-size: 200% 200%, 80%, 200%; } }

@@ -10,8 +10,7 @@ body{
     text-align: center;
     color: #FFF;
     font-family: 'Lato';
-
-    
+     
     &::before{
         content: '';
         display: block;
@@ -19,8 +18,33 @@ body{
         top: 0;
         width: 100vw;
         height: 100vh;
-        background: url(../images/index/bkg2.jpg);
+        
+        background:  linear-gradient(45deg, rgba(140,109,225,1)  0%, rgba(255,255,255,1) 100%) , url(../images/index/bkg.svg), url(../images/index/info.png);
+       
+        background-blend-mode: hard-light;
+        
+        background-size: 200% 200%, 40%, 100%;
+        background-repeat: no-repeat, repeat;
+        animation: bgga 30s ease infinite;
+        
+        @keyframes bgga { 
+            0%{background-position:0% 96%, 0% 30%, 100% 100%}
+            50%{background-position:100% 5%, 31% 60%, 100% 100%}
+            100%{background-position:0% 96%, 61% 100%, 100% 100%}
+        }
+    }
+    
+    &::after{
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        
+        //background: url(../images/index/bkg.jpg);
         background-size: cover;
+        background-blend-mode: screen;
     }
     
     
@@ -228,6 +252,12 @@ body{
             color: #fff;
         }
     
+    body{
+        &::before{
+            background-size: 200% 200%, 70%, 200%;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 576px){
@@ -240,6 +270,11 @@ body{
             //display:none;
             color: #fff;
         }
+    body{
+        &::before{
+            background-size: 200% 200%, 80%, 200%;
+        }
+    }
     
 }
 
